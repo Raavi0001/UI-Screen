@@ -3,12 +3,12 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   txt1: {
     fontSize: 14,
-    fontWeight: "500",
+    fontWeight: "700",
   },
   borderTop: {
     borderWidth: 0.6,
-    borderColor: "lightgrey",
-    marginTop: -3,
+    borderColor: "#D8D8D8",
+    marginTop: -7,
     width: 270,
   },
   imgprofile: {
@@ -21,10 +21,10 @@ const styles = StyleSheet.create({
   },
   txt2: {
     fontSize: 12,
-    fontWeight: "600",
-    color: "#848482",
+    fontWeight: "700",
+    color:"#3B444B",
     marginLeft: 10,
-    marginTop: 5,
+    marginTop: 12,
   },
   imgaddress: {
     width: 20,
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   },
   bottomLine: {
     borderWidth: 0.6,
-    borderColor: "lightgrey",
+    borderColor: "#D8D8D8",
     marginTop: 15,
     width: 350,
   },
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   bottomLine2: {
     borderWidth: 0.6,
-    borderColor: "lightgrey",
+    borderColor: "#D8D8D8",
     marginTop: 15,
     width: 350,
   },
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   bottomLine3: {
     borderWidth: 0.6,
-    borderColor: "lightgrey",
+    borderColor: "#D8D8D8",
     marginTop: -2,
     width: 259,
     position: "relative",

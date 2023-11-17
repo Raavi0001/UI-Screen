@@ -30,7 +30,8 @@ const Savebutton = ({ onClick }) => {
   return (
     <View style={{ alignItems: "center", marginTop: 20, marginBottom: 35 }}>
       <TouchableOpacity onPress={onClick}>
-        <View style={styles.editbtn}>
+        {/* <View style={styles.editbtn}> */}
+         <View style={{...styles.editbtn,width:350}}>
           <Text style={{ color: "white", fontWeight: "600" }}>SAVE</Text>
         </View>
       </TouchableOpacity>
@@ -48,14 +49,13 @@ const IncompleteBtn = ({ onPress }) => {
           width: 96,
           marginLeft: 10,
           height: 24,
-          borderRadius: 7,
-          borderColor: "#ff5448",
-          borderWidth: 0.5,
-          shadowColor: "black",
-          shadowOpacity: 0.2,
+          borderRadius: 4,
+          marginTop:3
         }}
       >
-        <Text style={{ textAlign: "center", color: "red", fontWeight: "500" }}>
+        <Text
+          style={{ color: "red", fontSize: 12, marginTop: 4, marginLeft: 12 }}
+        >
           Incomplete
         </Text>
       </View>

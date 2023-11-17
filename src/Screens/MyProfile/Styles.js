@@ -11,21 +11,30 @@ const styles=StyleSheet.create({
       txt1: {
         fontSize: 21,
         marginTop: 10,
-        fontWeight: "700",
+        fontWeight: "600",
+        marginLeft:13,
+        
       },
       txt2: {
         fontSize: 14,
         color: "grey",
+        marginLeft:14,
+        marginTop: 5,
       },
+      // viewPercent: {
+      //   borderWidth: 2,
+      //   borderColor: "green",
+      //   borderRadius: 40,
+      //   width: 64,
+      //   height: 64,
+      //   justifyContent: "center",
+      //   alignItems: "center",
+      //   marginRight: 20,
+      // },
       viewPercent: {
-        borderWidth: 2,
-        borderColor: "green",
-        borderRadius: 40,
-        width: 64,
-        height: 64,
-        justifyContent: "center",
-        alignItems: "center",
+    
         marginRight: 20,
+        marginTop: 7,
       },
       txtInc: {
         backgroundColor: "#fcc1c1",

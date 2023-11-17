@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
-import { Image, TouchableOpacity, View } from "react-native";
+import { Image,  View,TouchableOpacity } from "react-native";
 import * as Screens from "../Screens";
 import StackScreen from "../Screens/StackScreen/StackScreen";
 import Strings from "../constants/Strings";
@@ -22,6 +22,8 @@ const Routes = () => {
           tabBarStyle: {},
         }}
       >
+
+        
         <Tab.Screen
           name={Strings.HOME}
           component={Screens.Home}
@@ -63,17 +65,22 @@ const Routes = () => {
                   <TouchableOpacity>
                     <Image
                       style={{
-                        height: 50,
-                        width: 50,
-                        marginTop: -47,
-                        marginLeft: 35,
+                        height: 60,
+                        width: 60,
+                        marginTop: -60,
+                        marginLeft: 30,
                         position: "absolute",
                         shadowColor: "#000",
                         shadowOffset: { width: 0, height: 2 },
                         shadowOpacity: 0.8,
                         shadowRadius: 50,
+                        borderWidth:7,
+                        borderColor:"#F5F5F5",
+                        borderRadius:32
+                       
+                        
                       }}
-                      source={imagePath.icPost}
+                      source={imagePath.icPersons}
                     />
                   </TouchableOpacity>
                 </View>

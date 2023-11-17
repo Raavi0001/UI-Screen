@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Image,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  View
-} from "react-native";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { IncompleteBtn, Savebutton } from "../../Components/Buttons/Editbtn";
 import Strings from "../../constants/Strings";
 import imagePath from "../../constants/imagePath";
@@ -13,9 +7,9 @@ import styles from "./Styles";
 
 const EditProfile = () => {
   return (
-    <View>
+    <View style={{backgroundColor:"#F5F5F5"}}>
       <ScrollView>
-        <View style={{ marginTop: 20, marginLeft: 10 }}>
+        <View style={{ marginTop: 25, marginLeft: 10 }}>
           <Text style={styles.txt1}>{Strings.EDIT_DETAILS}s</Text>
         </View>
 
@@ -30,19 +24,21 @@ const EditProfile = () => {
           <View style={{ alignItems: "flex-end", marginRight: 20 }}>
             <Image style={styles.imgprofile} source={imagePath.icProfile} />
 
-           <TouchableOpacity>
-           <Image
-              style={{ width: 20, height: 20, marginTop: -18 }}
-              source={imagePath.icEditprofile}
-            />
-           </TouchableOpacity>
+            <TouchableOpacity>
+              <Image
+                style={{ width: 20, height: 20, marginTop: -18 }}
+                source={imagePath.icEditprofile}
+              />
+            </TouchableOpacity>
           </View>
         </View>
 
         <View style={styles.borderTop}></View>
 
         <View style={{ marginLeft: 10, marginTop: 10 }}>
-          <Text style={{ fontSize: 12, color: "#848482" }}>{Strings.DOB}</Text>
+          <Text style={{ fontSize: 12, color: "#3B444B", fontWeight: "700" }}>
+            {Strings.DOB}
+          </Text>
         </View>
 
         <View style={{ marginLeft: 10 }}>
@@ -55,7 +51,7 @@ const EditProfile = () => {
 
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <View style={{ marginLeft: 10, marginTop: 10 }}>
-            <Text style={{ fontSize: 12, color: "#848482" }}>
+            <Text style={{ fontSize: 12, color: "#3B444B", fontWeight: "700" }}>
               {Strings.ADDRESS}
             </Text>
             <Text style={{ fontSize: 14, fontWeight: "400" }}>
@@ -71,7 +67,7 @@ const EditProfile = () => {
         <View style={styles.bottomLine2}></View>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <View style={{ marginLeft: 10, marginTop: 10 }}>
-            <Text style={{ fontSize: 12, color: "#848482" }}>
+            <Text style={{ fontSize: 12, color: "#3B444B", fontWeight: "700" }}>
               {Strings.SEX}
             </Text>
             <Text style={{ fontSize: 14, fontWeight: "400" }}>
@@ -89,7 +85,7 @@ const EditProfile = () => {
         <View style={styles.bottomLine2}></View>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <View style={{ marginLeft: 10, marginTop: 10 }}>
-            <Text style={{ fontSize: 12, color: "#848482" }}>
+            <Text style={{ fontSize: 12, color: "#3B444B", fontWeight: "700" }}>
               {Strings.PASSWORD}
             </Text>
             <Text style={{ fontSize: 14, fontWeight: "400" }}>
@@ -109,7 +105,7 @@ const EditProfile = () => {
         <View style={styles.bottomLine3}></View>
 
         <View style={{ marginLeft: 10, marginTop: 18 }}>
-          <Text style={{ fontSize: 14, fontWeight: "600" }}>
+          <Text style={{ fontSize: 14, fontWeight: "700" }}>
             {Strings.EDIT_SUMMARY}
           </Text>
         </View>

@@ -14,5 +14,6 @@ export default{
     icGroups:require("../assets/images/groups.png"),
     icChat:require("../assets/images/chat.png"),
     icPost:require("../assets/images/postplus.png"),
+    icPersons:require("../assets/images/Persons.png"),
 
 }
